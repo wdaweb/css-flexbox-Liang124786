@@ -13,15 +13,17 @@
     }
 
     .container {
-      width: 80vw;
-      margin: auto;
+      width: 1533px;
+      height: 900px;
       display: flex;
       justify-content: center;
+      text-align: center;
+      margin: auto;
 
       .start_text {
         display: flex;
         flex-direction: column;
-        font-size: 2.2rem;
+        font-size: 37px;
         margin: 0 2rem;
         font-family: "標楷體";
         font-weight: bolder;
@@ -30,7 +32,7 @@
       .end_text {
         display: flex;
         flex-direction: column;
-        font-size: 2.2rem;
+        font-size: 37px;
         margin: 0 2rem;
         font-family: "標楷體";
         font-weight: bolder;
@@ -43,27 +45,252 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
 
         .content_box {
           border: 1px solid #000;
-          width: 85%;
+          width: 84%;
           display: flex;
           flex-wrap: wrap;
           margin: 4rem 0;
 
           .box {
             border: 1px solid #000;
-            width: 12.5%;
-            aspect-ratio: 1 / 1;
+            width: 80px;
+            height: 80px;
+          }
+
+          .box:nth-child(4) {
+            position: relative;
+          }
+
+          .box:nth-child(4)::after {
+            content: "";
+            position: absolute;
+            width: 110px;
+            height: 2px;
+            background: #000;
+            top: 39px;
+            left: -15px;
+            transform: rotate(45deg);
+          }
+
+          .box:nth-child(5) {
+            position: relative;
+          }
+
+          .box:nth-child(5)::after {
+            content: "";
+            position: absolute;
+            width: 110px;
+            height: 2px;
+            background: #000;
+            top: 39px;
+            left: -15px;
+            transform: rotate(-45deg);
+          }
+
+          .box:nth-child(12) {
+            position: relative;
+          }
+
+          .box:nth-child(12)::after {
+            content: "";
+            position: absolute;
+            width: 110px;
+            height: 2px;
+            background: #000;
+            top: 39px;
+            left: -15px;
+            transform: rotate(-45deg);
+          }
+
+          .box:nth-child(13) {
+            position: relative;
+          }
+
+          .box:nth-child(13)::after {
+            content: "";
+            position: absolute;
+            width: 110px;
+            height: 2px;
+            background: #000;
+            top: 39px;
+            left: -15px;
+            transform: rotate(45deg);
+          }
+
+          .box:nth-child(53) {
+            position: relative;
+          }
+
+          .box:nth-child(53)::after {
+            content: "";
+            position: absolute;
+            width: 110px;
+            height: 2px;
+            background: #000;
+            top: 39px;
+            left: -15px;
+            transform: rotate(45deg);
+          }
+
+          .box:nth-child(54) {
+            position: relative;
+          }
+
+          .box:nth-child(54)::after {
+            content: "";
+            position: absolute;
+            width: 110px;
+            height: 2px;
+            background: #000;
+            top: 39px;
+            left: -15px;
+            transform: rotate(-45deg);
+          }
+
+          .box:nth-child(61) {
+            position: relative;
+          }
+
+          .box:nth-child(61)::after {
+            content: "";
+            position: absolute;
+            width: 110px;
+            height: 2px;
+            background: #000;
+            top: 39px;
+            left: -15px;
+            transform: rotate(-45deg);
+          }
+
+          .box:nth-child(62) {
+            position: relative;
+          }
+
+          .box:nth-child(62)::after {
+            content: "";
+            position: absolute;
+            width: 110px;
+            height: 2px;
+            background: #000;
+            top: 39px;
+            left: -15px;
+            transform: rotate(45deg);
           }
 
           .middle_box {
             width: 100%;
-            aspect-ratio: 8 / 1;
+            height: 80px;
             border: 1px solid #000;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 40px;
+            font-family: "標楷體";
+            gap: 20px;
+          }
+
+        }
+
+        .black_chess {
+          border: 1px solid #000;
+          border-radius: 50%;
+          width: 70px;
+          height: 70px;
+          font-family: "標楷體";
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 45px;
+          font-weight: bolder;
+          background: white;
+        }
+
+        .black_chess_row {
+          position: absolute;
+          display: flex;
+          top: 40px;
+          right: 18px;
+
+          .black {
+            margin-right: 10px;
+          }
+        }
+
+        .black_chess_row2 {
+          position: absolute;
+          display: flex;
+          top: 197px;
+          left: 104px;
+
+          .black2 {
+            margin-right: 416px;
+          }
+        }
+
+        .black_chess_row3 {
+          position: absolute;
+          display: flex;
+          top: 276px;
+          left: 24px;
+
+          .black3 {
+            margin-right: 91px;
+          }
+        }
+
+        .red_chess {
+          border: 1px solid #000;
+          border-radius: 50%;
+          width: 70px;
+          height: 70px;
+          font-family: "標楷體";
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 45px;
+          font-weight: bolder;
+          background: white;
+          color: red;
+        }
+
+        .red_chess_row {
+          position: absolute;
+          display: flex;
+          bottom: 285px;
+          right: -66px;
+
+          .red1 {
+            margin-right: 92px;
+          }
+        }
+
+        .red_chess_row2 {
+          position: absolute;
+          display: flex;
+          bottom: 199px;
+          left: 109px;
+
+          .red2 {
+            margin-right: 409px;
+          }
+        }
+
+        .red_chess_row3 {
+          position: absolute;
+          display: flex;
+          bottom: 42px;
+          right: 20px;
+
+          .red3 {
+            margin-right: 10px;
           }
         }
       }
+
+
     }
   </style>
 </head>
@@ -126,9 +353,12 @@
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
-        <div class="middle_box">
 
+        <div class="middle_box">
+          <span>楚河</span>
+          <span>漢界</span>
         </div>
+
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
@@ -161,6 +391,50 @@
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
+      </div>
+      <div class="black_chess_row">
+        <div class="black_chess black">車</div>
+        <div class="black_chess black">馬</div>
+        <div class="black_chess black">象</div>
+        <div class="black_chess black">士</div>
+        <div class="black_chess black">將</div>
+        <div class="black_chess black">士</div>
+        <div class="black_chess black">象</div>
+        <div class="black_chess black">馬</div>
+        <div class="black_chess black">車</div>
+      </div>
+      <div class="black_chess_row2">
+        <div class="black_chess black2">包</div>
+        <div class="black_chess black2">包</div>
+      </div>
+      <div class="black_chess_row3">
+        <div class="black_chess black3">卒</div>
+        <div class="black_chess black3">卒</div>
+        <div class="black_chess black3">卒</div>
+        <div class="black_chess black3">卒</div>
+        <div class="black_chess black3">卒</div>
+      </div>
+      <div class="red_chess_row">
+        <div class="red_chess red1">兵</div>
+        <div class="red_chess red1">兵</div>
+        <div class="red_chess red1">兵</div>
+        <div class="red_chess red1">兵</div>
+        <div class="red_chess red1">兵</div>
+      </div>
+      <div class="red_chess_row2">
+        <div class="red_chess red2">炮</div>
+        <div class="red_chess red2">炮</div>
+      </div>
+      <div class="red_chess_row3">
+        <div class="red_chess red3">俥</div>
+        <div class="red_chess red3">傌</div>
+        <div class="red_chess red3">相</div>
+        <div class="red_chess red3">仕</div>
+        <div class="red_chess red3">帥</div>
+        <div class="red_chess red3">仕</div>
+        <div class="red_chess red3">相</div>
+        <div class="red_chess red3">傌</div>
+        <div class="red_chess red3">俥</div>
       </div>
     </div>
     <div class="end_text">
